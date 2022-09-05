@@ -1,0 +1,59 @@
+.basics {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+.basics h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.basics ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.basics form li + li {
+    margin-top: 1em;
+}
+
+.basics label {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+.basics input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+.basics input:focus,
+textarea:focus {
+    border-color: #000;
+}
+
+.basics textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+.button {
+    padding-left: 90px;
+}
+
+button {
+    margin-left: .5em;
+}
+
+fieldset {
+    width: 300px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second form project</title>
+</head>
+<body>
+    <h1>Payment Information</h1>
+    <p>Required fields are followed by <strong><span aria-label="required">*</span></strong>.</p>
+    <section class="contact">
+        <h2>Contact Information</h2>
+        <form action="/my-handling-fom-page" method="post">
+            <fieldset>
+                <legend>Title</legend>
+                <ul>
+                    <li>
+                        <label for="title-1"><input type="radio" id="title-1" name="title" value="A">Ace</label>
+                    </li>
+                    <li>
+                        <label for="title-2"><input type="radio" id="title-2" name="title" value="K">King</label>
+                    </li>
+                    <li>
+                        <label for="title-3"><input type="radio" id="title-3" name="title" value="Q">Queen</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <p>
+                <label for="name">
+                    <span>Name: </span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="text" id="name" name="username">
+            </p>
+            <p>
+                <label for="mail">
+                    <span>Email: </span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="email" id="mail" name="usermail">
+            </p>
+            <p>
+                <label for="pwd">
+                    <span>Password: </span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="password" id="pwd" name="password">
+            </p>
+        </form>
+    </section>
+    <section class="payment">
+        <h2>Payment Information</h2>
+        <form action="/my-handling-fom-page" method="post">
+            <p>
+                <label for="card">
+                    <span>Card type: </span>
+                </label>
+                <select name="usercard" id="card">
+                    <option value="visa">Visa</option>
+                    <option value="mc">Mastercard</option>
+                    <option value="ames">Anerican Express</option>
+                </select>
+            </p>  
+            <p>
+                <label for="number">
+                    <span>Card Number: </span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="tel" id="number" name="cardnumber">
+            </p>
+            <p>
+                <label for="expiration">
+                    <span>Expiration Date: </span>
+                    <strong><span aria-label="required">*</span></strong>
+                </label>
+                <input type="text" id="expiration" required="true" placeholder="MM/YY">
+            </p>
+        </form>
+    </section>
+    <section>
+        <p>
+            <button type="submit">Validate the payment</button>
+        </p>
+    </section>
+</body>
+</html>
